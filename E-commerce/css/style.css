@@ -1,0 +1,166 @@
+/* General */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+
+/* Top Bar */
+
+.top-bar {
+    background-color: #f1f1f1;
+    padding: 8px 0;
+}
+
+.top-bar a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.top-bar a:hover {
+    color: #0d6efd;
+}
+
+
+/* Navigation */
+
+.navbar {
+    width: 100%;
+}
+
+.navbar .nav-link {
+    padding: 12px 18px !important;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    background-color: #0d6efd;
+    color: white !important;
+    border-radius: 5px;
+}
+
+
+/* Date Time */
+
+.date-time {
+    background-color: #e9ecef;
+    color: #333;
+    font-weight: 500;
+}
+
+
+/* Banner */
+
+.banner-image {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* Section */
+
+.section-title {
+    font-weight: bold;
+    position: relative;
+}
+
+
+/* Product Card */
+
+.product-card {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.product-image {
+    height: 250px;
+    object-fit: cover;
+}
+
+
+/* Footer */
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #0d6efd;
+}
+
+
+/* Product Detail Image Zoom */
+
+.zoom-container {
+    overflow: hidden;
+    cursor: zoom-in;
+    border-radius: 10px;
+}
+
+.zoom-image {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.zoom-container:hover .zoom-image {
+    transform: scale(1.5);
+}
+
+
+/* Quantity */
+
+.quantity-box {
+    width: 150px;
+}
+
+
+/* Forms */
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .banner-image {
+        height: 350px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 25px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+
+    .top-bar .container {
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
+
+}
