@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+
+/* Top Bar */
+.top-bar a {
+    text-decoration: none;
+}
+
+.top-bar a:hover {
+    color: #ffc107 !important;
+}
+
+
+/* Navigation */
+.navbar .nav-link {
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #ffc107 !important;
+}
+
+
+/* Date Time */
+.date-time {
+    background-color: #f8f9fa;
+    font-size: 15px;
+}
+
+
+/* Banner */
+.banner-img {
+    height: 550px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+/* Section Titles */
+.section-title {
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+/* Food Images */
+.food-img {
+    height: 230px;
+    object-fit: cover;
+}
+
+
+/* Cards */
+.card {
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+
+/* Newsletter */
+.newsletter {
+    background-color: #f8f9fa;
+}
+
+
+/* Footer */
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffc107;
+}
+
+.copyright {
+    background-color: #212529;
+}
+
+
+/* Image Zoom */
+.zoom-container {
+    overflow: hidden;
+    cursor: zoom-in;
+}
+
+.zoom-image {
+    transition: transform 0.5s ease;
+}
+
+.zoom-container:hover .zoom-image {
+    transform: scale(1.5);
+}
+
+
+/* Quantity */
+.quantity-box {
+    width: 150px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .top-bar .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .banner-img {
+        height: 400px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 28px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .banner-img {
+        height: 350px;
+    }
+
+}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Palace - Menu</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold fs-3" href="index.html">
+            <i class="bi bi-shop"></i> Food Palace
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login/Register</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- Breadcrumb -->
+<div class="container py-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Menu</li>
+        </ol>
+    </nav>
+</div>
+
+<!-- Menu -->
+<section class="container pb-5">
+
+    <div class="row">
+
+        <!-- Left Panel -->
+        <div class="col-lg-3 mb-4">
+
+            <h4 class="mb-3">Food Categories</h4>
+
+            <div class="accordion" id="categoryAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#starter">
+                            Starters
+                        </button>
+                    </h2>
+
+                    <div id="starter"
+                         class="accordion-collapse collapse show"
+                         data-bs-parent="#categoryAccordion">
+
+                        <div class="accordion-body">
+                            Soup<br>
+                            Salad<br>
+                            Spring Roll
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#mainCourse">
+                            Main Course
+                        </button>
+                    </h2>
+
+                    <div id="mainCourse"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#categoryAccordion">
+
+                        <div class="accordion-body">
+                            Pizza<br>
+                            Steak<br>
+                            Chicken Pasta
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#dessert">
+                            Desserts
+                        </button>
+                    </h2>
+
+                    <div id="dessert"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#categoryAccordion">
+
+                        <div class="accordion-body">
+                            Chocolate Cake<br>
+                            Ice Cream<br>
+                            Fruit Salad
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#drinks">
+                            Drinks
+                        </button>
+                    </h2>
+
+                    <div id="drinks"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#categoryAccordion">
+
+                        <div class="accordion-body">
+                            Coffee<br>
+                            Fresh Juice<br>
+                            Soft Drinks
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Right Panel -->
+        <div class="col-lg-9">
+
+            <h2 class="section-title mb-4">Our Menu</h2>
+
+            <div class="row g-4">
+
+                <!-- Item 1 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+                             class="card-img-top food-img"
+                             alt="Pizza">
+
+                        <div class="card-body">
+                            <h5>Italian Pizza</h5>
+                            <p>Cheese pizza with fresh vegetables.</p>
+                            <h5 class="text-danger">$12.00</h5>
+
+                            <a href="dish-detail.html"
+                               class="btn btn-danger">
+                                Add to Cart / Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+                             class="card-img-top food-img"
+                             alt="Steak">
+
+                        <div class="card-body">
+                            <h5>Grilled Steak</h5>
+                            <p>Tender grilled steak with vegetables.</p>
+                            <h5 class="text-danger">$18.00</h5>
+
+                            <a href="dish-detail.html"
+                               class="btn btn-danger">
+                                Add to Cart / Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
+                             class="card-img-top food-img"
+                             alt="Pasta">
+
+                        <div class="card-body">
+                            <h5>Chicken Pasta</h5>
+                            <p>Creamy pasta with grilled chicken.</p>
+                            <h5 class="text-danger">$15.00</h5>
+
+                            <a href="dish-detail.html"
+                               class="btn btn-danger">
+                                Add to Cart / Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80"
+                             class="card-img-top food-img"
+                             alt="Cake">
+
+                        <div class="card-body">
+                            <h5>Chocolate Cake</h5>
+                            <p>Soft chocolate cake with cream.</p>
+                            <h5 class="text-danger">$8.00</h5>
+
+                            <a href="dish-detail.html"
+                               class="btn btn-danger">
+                                Add to Cart / Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <nav class="mt-5">
+                <ul class="pagination justify-content-center">
+
+                    <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                    </li>
+
+                    <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">&copy; 2026 Food Palace. All Rights Reserved.</p>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
